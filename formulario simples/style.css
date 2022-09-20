@@ -1,0 +1,129 @@
+
+ /*Configurações Globais*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 770px;
+    height: auto;
+    margin: auto;
+}
+
+fieldset{
+    border: solid 1px #dbdbdb;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 15px;
+}
+
+label p{
+    color: #2e2e2e;
+    font-weight: bold;
+    margin-top: 55px;
+    margin-bottom: 15px;
+}
+
+/*Configurações Header*/
+
+.container h2{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/*Configurações Title*/
+
+.title{
+    font-weight: bold;
+}
+
+/*Configurações input-box*/
+
+.flex{
+    display: flex;
+}
+
+.flex input{
+    flex: 1;
+    border: solid 1px #dbdbdb;
+    padding-left: 15px;
+    height: 45px;
+}
+
+#name{
+    margin-right: 6px;
+}
+
+.group_genero input{
+    margin-right: 14px;
+}
+
+.group_genero fieldset{
+    margin-bottom: 9px;
+}
+
+#date{
+    color: #ababab;
+    border: none;
+    font-size: 16px;
+}
+
+#phone{
+    color: #ababab;
+    border: none;
+    font-size: 16px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    font-weight: bold;
+    color: #fff;
+    padding: 20px;
+    border: none;
+    margin-top: 40px;
+    background-color: #252525;
+}
+
+button:hover{
+    color: #000;
+    background-color: #fff;
+    border: solid 1px #252525;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    .container{
+       width: 550px;
+    }
+}
+
+@media (max-width: 425px){
+    .container{
+       width: 300px;
+    }
+
+    .flex{
+        display: block;
+    }
+
+    .flex input{
+        width: 280px;
+        margin-bottom: 9px;
+    }
+}

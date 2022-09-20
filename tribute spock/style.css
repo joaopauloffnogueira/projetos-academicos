@@ -1,0 +1,193 @@
+
+/*Configuração*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+}
+
+body {
+	background-color: #BFBDC1;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.yellolight{
+    color: #e09809;
+    text-shadow: 
+               -1px -1px 0px #000000, 
+               -1px 1px 0px #000000,                    
+                1px -1px 0px #000000,                  
+                1px 0px 0px #000000;
+}
+
+#about, #gallery, #timeline, #links{
+    width: 100%;
+    margin: auto;
+    padding: 20px 0px;
+    text-align: center;
+    border: solid 3px #000;
+    border-top: none;
+}
+
+
+/*Configuração Header/Menu*/
+
+header{
+    background-color: #0d160b;
+    padding: 30px 0px 30px 0px;
+    text-align: center;   
+}
+
+nav ul li{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #e09809;
+}
+
+/*Configuração Section Abount*/
+
+#about{
+    background-color: #484f90;
+}
+
+#about img{
+    margin: auto;
+    width: 100%;
+}
+
+h1{
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+h3{
+    padding: 20px 0px 20px 0px;
+    font-size: 23px;
+    font-weight: lighter;
+}
+
+h2{
+    padding-bottom: 15px;
+}
+
+p{
+    line-height: 1.5;
+    padding: 0px 20px;
+    font-size: 17px;
+}
+
+
+
+/*Configuração Section Gallery*/
+
+#gallery{
+    background-color: #e09809;
+}
+
+
+
+.img-gallery{
+    margin: auto;
+    width: 85%;
+    border: solid 2px #fff;
+    margin: 9px 0;
+}
+
+
+
+/*Configuração Section TimeLine*/
+
+#timeline{
+    background-color: #CB4646;
+}
+
+#timeline ul li{
+    background-color: #fff;
+    color: #484F90;
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    width: 85%;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+}
+
+.timeline-dates{
+    background-color: #E09809;
+    padding: 12px;
+}
+
+
+/*Configuração Section Links*/
+
+#links{
+    background-color: #484f90;
+}
+
+
+/*Configuração Section Footer*/
+
+footer{
+    background-color: #0D160B;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-img{
+    max-width: 40px;
+    padding: 5px;
+}
+
+
+
+/*Configuração @MEDIA Responsivo*/
+
+@media screen and (min-width: 500px){
+
+    .img-gallery{
+        max-width: 350px;
+    }
+
+    #timeline ul li {
+		max-width: 65%;
+	}
+
+    #about, #timeline, #gallery, #links{
+        width: 85%;
+    }
+
+    #about img{
+        width: 85%;
+    }   
+}
+
+@media screen and (min-width: 790px) {
+
+	.img-gallery {
+		max-width: 350px;
+		margin: 10px 1%;
+	}
+
+	#timeline ul li {
+		max-width: 50%;
+	}
+
+    #about img {
+		max-width: 650px;
+	}
+
+	#about p {
+		margin: 20px 50px;
+	}
+
+}
