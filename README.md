@@ -21,3 +21,6 @@ Projeto 5
 
 Projeto 6
 <a href="https://joaopauloffnogueira.github.io/projetos-academicos/formulario simples/">Formulario Simples</a>
+
+Projeto 7
+<a href="https://joaopauloffnogueira.github.io/projetos-academicos/AWAX/">AWAX</a>
