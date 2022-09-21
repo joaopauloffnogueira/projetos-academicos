@@ -1,0 +1,204 @@
+
+/*Configuração Geral*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    overflow-x: hidden; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+/*font-family: 'Montserrat', Arial, sans-serif*/
+
+
+/*Configuração do Menu*/
+
+header{
+    height: 100px;
+    background-color: #000;
+}
+.header{
+    max-width: 1140px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+.logo{
+    width: 100px;
+}
+
+
+
+.menu{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu ul li{
+    list-style: none;
+}
+.menu ul{
+    display: flex;
+}
+.menu li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 0 10px;
+    border-bottom: 5px solid #000;
+}
+.menu .active a{
+    border-bottom: 5px solid #b28756;
+}
+.menu li a:hover{
+    border-bottom: 5px solid #b28756;
+    background-image: linear-gradient(to bottom, #000, #b2875619);
+}
+
+
+/*Configuração do Banner*/
+
+.banner{
+    height: calc(100vh - 100px);
+    background-color: #333;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+.banner .sliders{
+    width: 1000vw;
+    height: 100%;
+}
+
+.banner .slide{
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.banner .slidearea{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.banner h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 65px;
+    text-shadow: 20px -3px 20px rgba(0, 0, 0, 0.766);
+}
+.banner h1 span{
+    color: #b28756;
+}
+.banner h2{
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.banner a{
+    display: block;
+    background-color: #b28756;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.banner .sliders-pointers{
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: -200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.banner .active{
+    background-color: #b28756;
+}
+
+
+
+/*Configuração do defaount*/
+
+
+
+.default{
+    padding: 50px 0;
+}
+
+.default .section-title,
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .section-title{
+    font-size: 20px;
+}
+
+.default .section-desc{
+    font-size: 12px;
+    color: #CCC;
+    margin: 10px 0px 40px 0px;
+}
+
+.default .section-body{
+    max-width: 1140px;
+    margin: auto;
+    min-height: 100px;
+    background-color: #ccc;
+}
+
+.default.light{
+    background-color: #f7f7f7;
+}
+
+.default.light .section-title{
+    color: #000;
+}
+
+.default.dark{
+    background-color: #000;
+}
+
+.dark .section-title{
+    color: #fff;
+}
