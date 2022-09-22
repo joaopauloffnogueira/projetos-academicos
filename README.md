@@ -4,23 +4,25 @@
 Projetos realizado até o momento.
 Obs: Todos os projetos foram feitos com intuito academico.
 
+<ul>
 Projeto 1
-<a href="https://joaopauloffnogueira.github.io/projetos-academicos/android/">Projeto Android</a>
+<li><a href="https://joaopauloffnogueira.github.io/projetos-academicos/android/">Projeto Android</a></li>
 
 Projeto 2
-<a href="https://joaopauloffnogueira.github.io/projetos-academicos/drnorman/">Dr Norman</a>
+<li><a href="https://joaopauloffnogueira.github.io/projetos-academicos/drnorman/">Dr Norman</a></li>
 
 Projeto 3
-<a href="https://joaopauloffnogueira.github.io/projetos-academicos/mediacenter/">Mediacenter</a>
+<li><a href="https://joaopauloffnogueira.github.io/projetos-academicos/mediacenter/">Mediacenter</a></li>
 
 Projeto 4
-<a href="https://joaopauloffnogueira.github.io/projetos-academicos/websolutions/">WebSolutions</a>
+<li><a href="https://joaopauloffnogueira.github.io/projetos-academicos/websolutions/">WebSolutions</a></li>
 
 Projeto 5
-<a href="https://joaopauloffnogueira.github.io/projetos-academicos/tribute spock/">Tribute Spock</a>
+<li><a href="https://joaopauloffnogueira.github.io/projetos-academicos/tribute spock/">Tribute Spock</a></li>
 
 Projeto 6
-<a href="https://joaopauloffnogueira.github.io/projetos-academicos/formulario simples/">Formulario Simples</a>
+<li><a href="https://joaopauloffnogueira.github.io/projetos-academicos/formulario simples/">Formulario Simples</a></li>
 
 Projeto 7
-<a href="https://joaopauloffnogueira.github.io/projetos-academicos/AWAX/">AWAX</a>
+<li><a href="https://joaopauloffnogueira.github.io/projetos-academicos/AWAX/">AWAX</a> <p> Em andamento </p></li>
+</ul>
