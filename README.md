@@ -11,5 +11,6 @@ Obs: Todos os projetos foram feitos com intuito academico.
 <li><a href="https://joaopauloffnogueira.github.io/projetos-academicos/websolutions/">WebSolutions</a></li>
 <li><a href="https://joaopauloffnogueira.github.io/projetos-academicos/tribute spock/">Tribute Spock</a></li>
 <li><a href="https://joaopauloffnogueira.github.io/projetos-academicos/formulario simples/">Formulario Simples</a></li>
-<li><a href="https://joaopauloffnogueira.github.io/projetos-academicos/AWAX/">AWAX</a><p>Em andamento</p></li>
+<li><a href="https://joaopauloffnogueira.github.io/projetos-academicos/AWAX/">AWAX</a> - Em andamento </li>
+<lil>a href="https://joaopauloffnogueira.github.io/projetos-academicos/Cordel/">Cordel</a></li>
 </ul>
