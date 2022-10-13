@@ -13,4 +13,5 @@ Obs: Todos os projetos foram feitos com intuito academico.
 <li><a href="https://joaopauloffnogueira.github.io/projetos-academicos/formulario simples/">Formulario Simples</a></li>
 <li><a href="https://joaopauloffnogueira.github.io/projetos-academicos/AWAX/">AWAX</a> - Em andamento </li>
 <li><a href="https://joaopauloffnogueira.github.io/projetos-academicos/Cordel/">Cordel</a></li>
+<li><a href="https://joaopauloffnogueira.github.io/projetos-academicos/PARALLAX/">Parallax</a></li>
 </ul>
