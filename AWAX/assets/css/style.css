@@ -1,5 +1,6 @@
 
-/*Configuração Geral*/
+/*--------------------------------------Configuração Geral-------------------------------------------*/
+
 
 *{
     margin: 0;
@@ -10,19 +11,31 @@
 body{
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 13px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
-/*font-family: 'Montserrat', Arial, sans-serif*/
+.button{
+    display: inline-block;
+    background-color: #b28756;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
 
 
-/*Configuração do Menu*/
+/*--------------------------------------Configuração do Menu-------------------------------------------*/
 
 header{
     height: 100px;
     background-color: #000;
+    color: #fff;
 }
+
 .header{
     max-width: 1140px;
     height: 100px;
@@ -31,29 +44,30 @@ header{
     align-items: center;
 }
 
+.logo{
+    width: 80px;
+}
 
-
-.logo img{
+.header img{
     width: 80px;
     height: 80px;
 }
-.logo{
-    width: 100px;
-}
-
-
 
 .menu{
     flex: 1;
     display: flex;
     justify-content: flex-end;
 }
-.menu ul li{
+
+.menu ul,
+.menu li{
     list-style: none;
 }
+
 .menu ul{
     display: flex;
 }
+
 .menu li a{
     color: #fff;
     text-transform: uppercase;
@@ -61,30 +75,30 @@ header{
     text-decoration: none;
     display: flex;
     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
     height: 100px;
-    padding: 0 10px;
     border-bottom: 5px solid #000;
 }
-.menu .active a{
+
+.menu li a:hover,
+.menu .active{
     border-bottom: 5px solid #b28756;
-}
-.menu li a:hover{
-    border-bottom: 5px solid #b28756;
-    background-image: linear-gradient(to bottom, #000, #b2875619);
+    background-image: linear-gradient(to bottom, #000, #b287561d);
+    color: #b28756;
 }
 
-
-/*Configuração do Banner*/
+/*--------------------------------------Configuração do Banner-------------------------------------------*/
 
 .banner{
     height: calc(100vh - 100px);
     background-color: #333;
     background-image: url('../images/bg.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     overflow: hidden;
+    background-attachment: fixed;
 }
-
 
 .banner .sliders{
     width: 1000vw;
@@ -97,6 +111,7 @@ header{
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.8);
 }
+
 .banner .slidearea{
     display: flex;
     flex-direction: column;
@@ -105,6 +120,7 @@ header{
     align-items: center;
     color: #fff;
 }
+
 .banner h1{
     text-transform: uppercase;
     font-weight: bold;
@@ -112,59 +128,51 @@ header{
     line-height: 65px;
     text-shadow: 20px -3px 20px rgba(0, 0, 0, 0.766);
 }
+
 .banner h1 span{
     color: #b28756;
 }
+
 .banner h2{
     text-transform: uppercase;
-    margin-top: 30px;
+    margin-top: 40px;
+    text-shadow: 0px 3px 0px rgb(0 0 0);
 }
-.banner a{
-    display: block;
-    background-color: #b28756;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 10px 30px;
-    margin-top: 30px;
-    border-radius: 20px;
-}
+
 .banner .sliders-pointers{
     width: 100vw;
     height: 20px;
     position: absolute;
     margin-top: -200px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
+
 .banner .pointer{
     width: 15px;
     height: 15px;
     border: 2px solid #b28756;
     border-radius: 8px;
-    margin: 0 5px;
+    margin-left: 5px;
+    margin-right: 5px;
     cursor: pointer;
 }
 
-.banner .active{
+.banner .pointer.active{
     background-color: #b28756;
 }
 
 
-
-/*Configuração do defaount*/
-
-
+/*--------------------------------------Configuração Padrão da Seções Light e Dark-------------------------------------------*/
 
 .default{
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .default .section-title,
-.default .section-desc {
+.default .section-desc{
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
@@ -172,26 +180,27 @@ header{
 
 .default .section-title{
     font-size: 20px;
+    font-weight: bold;
 }
 
 .default .section-desc{
-    font-size: 12px;
+    font-size: 13px;
     color: #CCC;
-    margin: 10px 0px 40px 0px;
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
 
 .default .section-body{
     max-width: 1140px;
     margin: auto;
-    min-height: 100px;
-    background-color: #ccc;
 }
 
 .default.light{
     background-color: #f7f7f7;
 }
 
-.default.light .section-title{
+.default.light .section-title,
+.default.light .section-body{
     color: #000;
 }
 
@@ -199,6 +208,63 @@ header{
     background-color: #000;
 }
 
-.dark .section-title{
-    color: #fff;
+.default.dark .section-title,
+.default.dark .section-body{
+    color: #fff;  
+}
+
+
+/*--------------------------------------Configuração About Us-------------------------------------------*/
+
+.section-aboutus{
+    display: flex;
+}
+
+.section-aboutus--left{
+    flex: 1;
+}
+
+.section-aboutus--left p{
+    font-size: 14px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.section-aboutus--right{
+    width: 520px;
+    text-align: center;
+}
+
+.section-aboutus--right img{
+    width: 480px;
+    box-shadow: 0px 5px 10px #333;
+}
+
+/*--------------------------------------Configuração Services-------------------------------------------*/
+
+.section-services{
+    display: flex;
+}
+
+.section-service{
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #333;
+    padding: 15px;
+}
+
+.section-service:first-child{
+    border-left: 1px solid #333;
+}
+
+.section-service h4{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.section-service p{
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999;
 }
