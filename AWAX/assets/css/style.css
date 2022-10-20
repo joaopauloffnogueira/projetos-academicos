@@ -199,6 +199,10 @@ header{
     background-color: #f7f7f7;
 }
 
+.default.lightfull{
+    background-color: #fff;
+}
+
 .default.light .section-title,
 .default.light .section-body{
     color: #000;
@@ -467,3 +471,214 @@ header{
 .section-team--social a:hover{
     background-color: #b28756;
 }
+
+
+
+/*--------------------------------------Configuração Our Team-------------------------------------------*/
+
+
+.section-happyclients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.section-happyclients--avatar{
+    width: 150px;
+    height: auto;
+}
+
+.section-happyclients--name{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.section-happyclients--role{
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.section-happyclients--aspas{
+    height: 25px;
+    width: 25px;
+    margin-top: 17px;
+}
+
+.section-happyclients-coment{
+    margin-top: 10px;
+    max-width: 600px;
+    line-height: 22px;
+    color: #555;
+}
+
+.section-happyclients .sliders-pointers{
+    margin-top: 60px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-happyclients .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.section-happyclients .pointer.active{
+    background-color: #b28756;
+}
+
+
+/*--------------------------------------Configuração Partnership-------------------------------------------*/
+
+
+.section-partnership--area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    border-top: solid 1px rgba(0, 0, 0, 0.255);
+    border-bottom: solid 1px rgba(0, 0, 0, 0.255);
+}
+
+.section-partnership{
+    max-width: 970px;
+}
+
+.section-partnership--area img{
+    padding: 30px;
+}
+
+
+
+
+/*--------------------------------------Configuração Price-------------------------------------------*/
+
+
+.section-prices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price{
+    margin-left: 40px;
+    text-align: center;
+    height: 320px;
+    width: 220px;
+    background-color: #fff;
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.price ul li{
+    list-style: none;
+}
+
+.price h6{
+    padding-top: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.price h2{
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.price p{
+    text-transform: uppercase;
+    color: #999;
+    font-size: 10px;
+}
+
+.price ul{
+    padding-bottom: 30px;
+}
+
+.price li{
+    font-size: 10px;
+    font-weight: 600;
+    color: #999;
+}
+
+.price a{
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: #333;
+    text-decoration: none;
+}
+
+.price a:hover,
+.price .active{
+    background-color: #b28756;
+}
+
+
+/*--------------------------------------Configuração Premium-------------------------------------------*/
+
+.section-premium--first{
+    display: flex;
+}
+
+.section-premium--first img{
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+}
+
+.section-premium--info ul li{
+    list-style: none;
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+
+.section-premium--left li, p{
+    color: #999;
+}
+
+
+
+
+
+.section-premium{
+    display: flex;
+}
+
+.section-premium--left{
+    flex: 1;
+}
+
+.section-premium--left p{
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.section-premium--right{
+    width: 520px;
+    text-align: center;
+}
+
+.section-premium--right img{
+    width: 350px;
+}
+
+
+
+
+
+
