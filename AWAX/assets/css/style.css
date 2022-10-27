@@ -53,6 +53,10 @@ header{
     height: 80px;
 }
 
+.menu-opener{
+    display: none;
+}
+
 .menu{
     flex: 1;
     display: flex;
@@ -949,4 +953,55 @@ footer {
 /*--------------------------------------@media TABLET-------------------------------------------*/
 
 
+@media (max-width: 800px) and (min-width: 450px){
 
+    .logo{
+        margin-left: 30px;
+    }
+
+    .menu .menu-opener{
+        display: block;
+        width: auto;
+        height: 40px;
+        margin-right: 30px;
+    }
+
+    nav{
+        display: block;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li a{
+        font-weight: bold;
+        height: 80px;
+        font-size: 27px;
+        margin-left: 50px;
+        border: 0;
+    }
+
+    .menu li a:hover,
+    .menu .active{
+        background-image: none;
+        border: 0;
+    }
+
+    .banner h1{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 70px;
+        line-height: 45px;
+        text-shadow: 20px -3px 20px rgba(0, 0, 0, 0.766);
+    }
+    
+    
+}
