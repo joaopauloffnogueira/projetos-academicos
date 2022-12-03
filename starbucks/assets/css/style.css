@@ -226,6 +226,7 @@ header .line{
 /*--------------------------------------Config FOOTER-------------------------------------------*/
 
 footer{
+    background-color: #262e3e;
     color: #fff;
     padding: 80px;
     text-align: center;
