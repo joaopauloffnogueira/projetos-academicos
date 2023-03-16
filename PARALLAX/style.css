@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(100, 100, 100);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.banner-img{
+    background-image: url(media/image/nova-iorque-new-york-nova-york.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity: 0.4;
+    height: 100vh;
+    width: 100%;
+}
+
+.title-banner{
+    display: flex;
+    background-color: rgb(73, 73, 73);
+    padding: 20px 20px 20px 20px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+.section-light{
+    background-color: rgb(255, 255, 255);
+    padding: 80px 70px 80px 70px;
+    color: rgb(126, 126, 126);
+}
+
+.section-light h1{
+    padding-bottom: 20px;
+}
+
+.section-light p{
+    line-height: 25px;
+}
+
+
+
+
+
+
+
+.section-dark{
+    background-color: rgb(50, 65, 80);
+    padding: 80px 70px 80px 70px;
+    color: rgb(255, 255, 255);
+}
+
+.section-dark h1{
+    padding-bottom: 20px;
+}
+
+.section-dark p{
+    line-height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.section-img{
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.back-img1{
+    background-image: url(media/image/passagens-aereas-nova-york-capa2019-01.jpg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity: 0.4;
+    height: 800px;
+    width: 100%;
+}
+
+.back-img2{
+    background-image: url(media/image/york-header.jpg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity: 0.4;
+    height: 800px;
+    width: 100%;
+}
+
+.title-backimg h1{
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 15px;
+}
+
+
+
+
+
+@media only screen and (max-width: 550px) {
+    .title-banner{
+        font-size: 20px;
+    }
+
+    .section-dark,
+    .section-light {
+        padding: 80px 25px 80px 25px;
+    }
+
+    .section-dark p,
+    .section-light p{
+        font-size: 17px;
+        
+    }
+
+    .section-dark h1,
+    .section-light h1{
+        font-size: 25px;
+        
+    }
+
+    .title-backimg h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .banner-img,
+    .back-img1,
+    .back-img2{
+        background-position: center;
+    }
+}
+
+
+
+

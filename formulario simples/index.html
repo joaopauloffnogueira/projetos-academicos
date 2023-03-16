@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Header -->
+
+    <header>
+        <div class="container">
+            <h2>Formulário de Consentimento Médico</h2>
+        </div>
+    </header>
+
+
+    <!-- Main -->
+
+    <main class="container">
+        <form action="#">
+            
+            <div class="input_name">
+                <fieldset>
+                    <div class="title">Informação do paciente</div>
+                </fieldset>
+                <div class="input_box">
+                    <label for="name"><p>Nome</p></label>
+                    <div class="flex">
+                        <input type="text" name="name" id="name" placeholder="Primeiro nome" required>
+                        <input type="text" name="lastname" id="lastname" placeholder="Último nome" required>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="group_genero">
+                <div class="input_box">
+                    <label for="name"><p>Nome</p></label>
+                        <fieldset>
+                            <input type="radio" name="feminino" id="feminino" required checked>Feminino
+                        </fieldset>
+                        <fieldset>
+                            <input type="radio" name="feminino" id="feminino" required>Masculino
+                        </fieldset>
+                        <fieldset>
+                            <input type="radio" name="feminino" id="feminino" required>Não binário
+                        </fieldset>
+                </div>
+            </div>
+
+
+            <div class="group_date">
+                <div class="input_box">
+                    <label for="date"><p>Data</p></label>
+                        <fieldset>
+                            <input type="date" name="date" id="date" required>
+                        </fieldset>
+                </div>
+            </div>
+
+            <div class="group_phone">
+                <div class="input_box">
+                    <label for="number"><p>Telefone para contato</p></label>
+                        <fieldset>
+                            <input type="tel" name="phone" id="phone" placeholder="(xx) xxxx-xxxx" required>
+                        </fieldset>
+                </div>
+            </div>
+
+
+            <div class="button">
+                <button type="submit">Enviar Formulário</button>
+            </div>
+            
+
+
+
+
+
+
+        </form>
+
+
+
+
+
+
+
+
+    </main>
+
+
+</body>
+</html>
