@@ -1,9 +1,10 @@
 # projetos-academicos
  Todos os projetos a seguir foram feito de forma academica para praticar e melhorar o HTML e CSS.
  
- Plataforma de Ensino: Curso em Vídeo <br>
+ <ul Plataforma de Ensino: Curso em Vídeo <br> >
     <lil> <a href="https://joaopauloffnogueira.github.io/projetos-academicos/android/"> Projeto Android - Curso em Vídeo </a> <br> 
     <lil> <a href="https://joaopauloffnogueira.github.io/projetos-academicos/Cordel/"> Projeto Cordel - Curso em Vídeo </a> <br> 
+</ul>
 
  Plataforma de Ensino: B7WEB <br>
     <lil> <a href="https://joaopauloffnogueira.github.io/projetos-academicos/mediacenter/"> Projeto MediaCenter - B7WEB </a> <br> 
