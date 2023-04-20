@@ -9,7 +9,7 @@
     <lil> <a href="https://joaopauloffnogueira.github.io/projetos-academicos/mediacenter/"> Projeto MediaCenter - B7WEB </a> <br> 
     <lil> <a href="https://joaopauloffnogueira.github.io/projetos-academicos/starbucks/"> Projeto StarBucks - B7WEB </a> <br> 
     <lil> <a href="https://joaopauloffnogueira.github.io/projetos-academicos/tribute spock/"> Projeto Tribute Spock - B7WEB </a> <br> 
-    <lil> <a href="https://joaopauloffnogueira.github.io/projetos-academicos/tribute AWAX/"> Projeto AWAX - B7WEB </a> <br> 
+    <lil> <a href="https://joaopauloffnogueira.github.io/projetos-academicos/AWAX/"> Projeto AWAX - B7WEB </a> <br> 
 
  Projetos que foram replicados com intuito de praticar. <br>
     <lil> <a href="https://joaopauloffnogueira.github.io/projetos-academicos/websolutions/"> Projeto websolutions </a> <br> 
