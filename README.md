@@ -1,5 +1,5 @@
- <h1> Projetos Academicos </h1>
- <br>
+ # projetos-academicos
+ 
  <h3>Todos os projetos a seguir foram feito de forma academica para praticar e melhorar o HTML e CSS.</h3>
  <br>
  
@@ -7,7 +7,7 @@
  <ul>
      -> <lil> <a href="https://joaopauloffnogueira.github.io/projetos-academicos/android/"> Projeto Android - Curso em Vídeo </a> <br> 
      -> <lil> <a href="https://joaopauloffnogueira.github.io/projetos-academicos/Cordel/"> Projeto Cordel - Curso em Vídeo </a> <br> 
- </ul>
+ </ul> <br>
 
  Plataforma de Ensino: B7WEB <br>
     <lil> <a href="https://joaopauloffnogueira.github.io/projetos-academicos/mediacenter/"> Projeto MediaCenter - B7WEB </a> <br> 
