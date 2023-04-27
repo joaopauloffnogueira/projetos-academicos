@@ -196,7 +196,7 @@ body{
 }
 @media (max-width: 800px){
     .autor_imagem{
-        width: 80%;
+        width: 60%;
      }
      .menu_link{
         font-size: 1.5rem;
