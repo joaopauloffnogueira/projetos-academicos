@@ -21,17 +21,6 @@ body{
     background-size: 300% 300%;
     animation: colors 15s ease infinite;
 }
-@keyframes colors {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-}
 .menu{
     display: flex;
     gap: 45px;
@@ -122,6 +111,9 @@ body{
 .projetos_academico{
     background-color: var(--cor-secundaria);
 }
+.social_link:hover{
+    animation: bounce 1s;
+}
 
 
 
@@ -149,18 +141,31 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+@keyframes colors {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+@keyframes bounce{
+    0%, 20%, 60%, 100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40%{
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80%{
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
 @media (max-width: 1600px){
     .cabecalho{
         padding: auto;
