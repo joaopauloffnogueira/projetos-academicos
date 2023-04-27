@@ -201,4 +201,13 @@ body{
      .menu_link{
         font-size: 1.5rem;
     }
+    .titulo_banner{
+        font-size: 1.7rem;
+    }
+    .texto_banner{
+        font-size: 1.3rem;
+    }
+    .subtitulo_banner{
+        font-size: 1.4rem;
+    }
 }
