@@ -258,4 +258,13 @@ footer{
     .texto_sobre{
         font-size: 1.2rem;
     }
+    .container_sobre{
+        margin: 0% 5%;
+    }
+    .link{
+        margin-bottom: 10px;
+    }
+    .social_link{
+        min-width: 80%;
+    }
 }
