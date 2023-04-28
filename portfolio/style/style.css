@@ -141,7 +141,7 @@ body{
     font-family: var(--font-secundaria);
     color: var(--cor-secundaria);
     font-size: 1.3rem;
-    text-align: justify;
+    text-align: start;
 }
 .link{
     text-decoration: none;
