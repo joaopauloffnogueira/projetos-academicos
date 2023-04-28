@@ -13,6 +13,11 @@
     --cor-secundaria: #f6f6f6;
     --cor-terciaria: #00D5FF;
 }
+.geral{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
 body{
     background-color: var(--cor-primaria);
 }
@@ -50,8 +55,10 @@ body{
     padding: 5% 15%;
     display: flex;
     align-items: center;
-    position: absolute;
     gap: 50px;
+}
+.autor_imagem{
+    width: 50%;
 }
 .container_banner{
     display: flex;
@@ -63,7 +70,6 @@ body{
     font-weight: 300;
     font-size: 2.7rem;
     color: var(--cor-secundaria);
-
 }
 .destaque{
     color: var(--cor-terciaria);
@@ -101,18 +107,54 @@ body{
     width: 50%;
     padding: 21px 0;
 }
-.icon_banner{
-    filter: blur(30%);
+.container_sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 5%;
+    margin: 0% 15%;
+    gap: 30px;
+    background-color: #f6f6f609;
+    border-radius: 10px;
+    box-shadow:  0px 0px 0px 2px #00d5ffb5;
 }
-.autor_imagem{
-    width: 50%;
+.titulo_sobre{
+    font-family: var(--font-primaria);
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--cor-secundaria);
+    padding-top: 5px;
 }
-
-.projetos_academico{
+.bar{
     background-color: var(--cor-secundaria);
+    padding: 1px 30px 1px 30px;
+    border-radius: 4px;
 }
-.social_link:hover{
-    animation: bounce 1s;
+.sobre_autor{
+    height: 20vh;
+}
+.texto_sobre{
+    font-family: var(--font-secundaria);
+    color: var(--cor-secundaria);
+    font-size: 1.3rem;
+    text-align: justify;
+}
+.link{
+    text-decoration: none;
+    font-family: var(--font-secundaria);
+    color: var(--cor-secundaria);
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #041934;
+    border-radius: 8px;
+    padding: 10px 20px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 1.5s;
+}
+.link:hover {
+    background-color: var(--cor-secundaria); /* Green */
+    color: var(--cor-primaria);
 }
 
 
@@ -122,11 +164,14 @@ body{
 
 
 
-
-
-
-
-
+footer{
+    text-align: center;
+    font-family: var(--font-secundaria);
+    color: #f6f6f668;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 100px 0px 30px 0px;
+}
 
 
 
@@ -200,9 +245,6 @@ body{
      }
 }
 @media (max-width: 800px){
-    .autor_imagem{
-        width: 60%;
-     }
      .menu_link{
         font-size: 1.5rem;
     }
@@ -214,5 +256,11 @@ body{
     }
     .subtitulo_banner{
         font-size: 1.4rem;
+    }
+    .titulo_sobre{
+        font-size: 1.2rem;
+    }
+    .texto_sobre{
+        font-size: 1.2rem;
     }
 }
