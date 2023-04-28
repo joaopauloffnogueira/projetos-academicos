@@ -107,6 +107,9 @@ body{
     width: 50%;
     padding: 21px 0;
 }
+.social_link:hover{
+    animation: bounce 1s;
+}
 .container_sobre{
     display: flex;
     flex-direction: column;
@@ -156,14 +159,6 @@ body{
     background-color: var(--cor-secundaria); /* Green */
     color: var(--cor-primaria);
 }
-
-
-
-
-
-
-
-
 footer{
     text-align: center;
     font-family: var(--font-secundaria);
