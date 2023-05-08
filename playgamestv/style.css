@@ -1,358 +1,87 @@
-
+/* Configurações Globais da Paigna */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --cor-primaria: #1c242b;
+    --cor-secundaria: #f6f6f648;
+    --cor-font: #f6f6f6;
+    --font-page: 'Josefin Sans', sans-serif;
+}
+#margin_page{
+    margin: 0% 15%;
+}
+h1, h2, h3, h4, p{
+    font-family: var(--font-page);
+    color: var(--cor-font);
+}
+
+/* Configuraçõe do HEADER/Menu */
 body{
     background-color: #1c242b;
 }
-.cabecalho{
-    background-color: #1c242b;
-    padding: 1% 15%;
+.cabecalho, .banner{
+    background-color: var(--cor-primaria);
+}
+.container_cabecalho{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    box-shadow:  0px 1px 6px 1px black;
+    justify-content: space-between;
+    padding: 10px 0px;
 }
 .logo_cabecalho{
-    width: 120px;
+    width: 100px;
 }
-.menu{
+.lista_menu{
     display: flex;
-    gap: 30px;
+    list-style: none;
+    gap: 20px;
 }
 .link_menu{
     text-decoration: none;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.2rem;
-    color: #fff;
+    font-family: var(--font-page);
+    color: var(--cor-font);
+    font-size: 1.1rem;
 }
+
+
+/* Configurações da SECTION/BANNER */
 .banner{
     background-image: linear-gradient(360deg, #1c242b 30%, transparent 85%) ,url(image/472609.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: 40%;
-}
-.banner{
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    height: 90vh;
+    background-position-y: 32%;
 }
 .container_banner{
-    margin: 2% 15%;
+    display: flex;
+    align-items: end;
+    height: 90vh; 
+    padding-bottom: 20px;
 }
 .conteudo_banner{
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding: 30px;
+    gap: 20px;
 }
 .titulo_banner{
-    font-family: 'Josefin Sans', sans-serif;
     font-size: 5rem;
     font-weight: 700;
-    color: #f6f6f6;
 }
 .texto_banner{
-    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
-    color: #f6f6f6;
 }
 .bar_banner{
-    background-color: #f6f6f648;
+    background-color: var(--cor-secundaria);
     border-radius: 8px;
-    padding: 4px;
-    
+    padding: 4px; 
 }
-.link_banner{
-    text-decoration: none;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #1c242b;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 10px 20px;
-}
-.conteudo_info{
-    margin: 10% 15%; 
-    padding-bottom: 1%;
-    background-color: #1c242b;
-    border-radius: 16px;
-    box-shadow:  0px 6px 0px 4px rgba(0, 0, 0, 0.311);
-}
-.container_info{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 2% 5%;
-}
-.titulo_info{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #f6f6f6;
-    text-align: center;
-}
-.subtitulo_info{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #f6f6f675;
-    text-align: center;
-}
-.bar_info{
-    background-color: #f6f6f66d;
-    border-radius: 4px;
-    padding: 1px;
-    margin: 0% 30%;
-}
-.texto_info{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.2rem;
-    color: #f6f6f6;
-    line-height: 25px;
-    text-align: center;
-}
-.container_conteudo{
-    margin: 5% 5%;
-}
-.container_titulo{
-    margin-bottom: 2%;
-}
-.conteudo_titulo{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #f6f6f6;
-}
-li{
-    margin-left: 15px;
-}
-.container_texto{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-.conteudo_texto{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1rem;
-    color: #f6f6f6;
-    line-height: 17px;
-}
-.conteudo_imagem{
-    width: 50%;
-    box-shadow:  0px 5px 0px 2px rgba(0, 0, 0, 0.43);
-    border-radius: 8px;
-}
-.botao_link_conteudo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10%;
-    margin-bottom: 5%;
-}
-.link_conteudo{
-    text-decoration: none;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #1c242b;
-    background-color: #f6f6f6d8;
-    border-radius: 8px;
-    padding: 10px 70px;
-}
-.bar_final{
-    background-color: #f6f6f645;
-    border-radius: 4px;
-    padding: 5px;
-    margin: 2% 10%;
-}
-.secao_anuncio {
-    margin: 10% 15%; 
-    padding-bottom: 1%;
-    background-color: #1c242b;
-    border-radius: 16px;
-    box-shadow: -7px 0 0px 0px rgba(0, 0, 0, 0.311), 7px 0 0px 0px rgba(0, 0, 0, 0.311);
-}
-.anuncio{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 5% 5%;
-}
-.container_anuncio{
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-    width: 350px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    gap: 10px;
-    margin-bottom: 50px;
-}
-.titulo_anuncio,.texto_anuncio{
-    font-family: 'Josefin Sans', sans-serif;
-    color: #f6f6f6;
-    margin: 5px 20px;
-}
-.link_anuncio{
-    font-family: 'Josefin Sans', sans-serif;
-    color: #f6f6f6;
-    font-size: 1.2rem;
-    text-align: center;
-    background-color: #1c242b;
-    border-radius: 0px 0px 8px 8px;
-    padding: 10px 0px;
-    box-shadow:  0px 4px 0px 0px rgba(0, 0, 0, 0.43);
-}
-.image1{
-    background-image: linear-gradient(360deg, #1c242b 30%, transparent 85%) ,url(image/capa1.png);
-}
-.image2{
-    background-image: linear-gradient(360deg, #1c242b 30%, transparent 85%) ,url(image/capa2.png);
-}
-.image3{
-    background-image: linear-gradient(360deg, #1c242b 30%, transparent 85%) ,url(image/capa3.png);
-}
-.image4{
-    background-image: linear-gradient(360deg, #1c242b 30%, transparent 85%) ,url(image/capa4.png);
-}
-.image5{
-    background-image: linear-gradient(360deg, rgb(28, 36, 43) 30%, transparent 85%) ,url(image/capa5.png);
-}
-.image6{
-    background-image: linear-gradient(360deg, #1c242b 30%, transparent 85%) ,url(image/capa6.png);
-}
-
-
-
-.footer_banner{
-    background-image: linear-gradient(89deg, #1c242b 35%, transparent 85%) ,url(image/Frontier-Camp.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 100%;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-}
-.footer_container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    margin-left: 10%;
-    width: 30vw;
-}
-.footer_logo{
-    width: 100%;
-}
-.footer_titulo{
-    font-family: 'Josefin Sans', sans-serif;
-    color: #f6f6f6;
-    font-size: 1.5rem;
-    font-style: italic;
-    text-align: center;
-}
-.footer_container_social{
-    display: flex;
-    gap: 10px;
-}
-.footer_social_link{
-    width: 30px;
-}
-.footer_link{
-    font-family: 'Josefin Sans', sans-serif;
-    color: #f6f6f6;
-    font-size: 1.5rem;
-    text-decoration: none;
-    background-color: #1c242b;
-    padding: 5px 100px;
-    border-radius: 4px;
-    box-shadow:  0px 4px 0px 0px #f6f6f66e
-}
-.direitos_autorais{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 2% 15% 0% 15%;
-}
-.img_rag{
-    width: 15%;
-}
-.text_footer{
-    font-family: 'Josefin Sans', sans-serif;
-    color: #f6f6f6;
-    font-size: 0.7rem;
-    width: 50%;
-    margin: 20px 0px;
-    text-align: center;
-}
-
-
-@media (max-width: 1800px){
-    .anuncio{
-        justify-content: space-around;
-        margin: 5% 10%;
-        
-    }
-    .banner{
-        width: 100%;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
