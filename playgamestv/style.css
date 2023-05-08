@@ -17,14 +17,26 @@
 #margin_page{
     margin: 0% 15%;
 }
+#margin_section{
+    padding: 5% 0%;
+}
 h1, h2, h3, h4, p{
     font-family: var(--font-page);
     color: var(--cor-font);
 }
 
+
+
+
+
+
+
+
+
 /* Configuraçõe do HEADER/Menu */
 body{
-    background-color: #1c242b;
+    height: 200vh;
+    background-color: var(--cor-primaria);
 }
 .cabecalho, .banner{
     background-color: var(--cor-primaria);
@@ -61,10 +73,10 @@ body{
 .container_banner{
     display: flex;
     align-items: end;
-    height: 90vh; 
+    height: 70vh; 
     padding-bottom: 20px;
 }
-.conteudo_banner{
+.conjunto_banner{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -85,10 +97,60 @@ body{
 
 
 
+/* Configurações da SECTION/INFORMAÇÃO */
 
+.container_conteudo_geral{
+    padding: 0px 40px;
+    border-radius: 16px;
+    box-shadow:  0px 6px 0px 4px rgba(0, 0, 0, 0.311);
+}
+.conjunto_titulo_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.titulo_info{
+    font-size: 2.2rem;
+}
+.subtitulo_info{
+    font-size: 1.3rem;
+    color: var(--cor-secundaria);
+}
+.bar_info{
+    width: 40%;
+    border-radius: 8px;
+    padding: 1px; 
+    background-color: var(--cor-secundaria);
+    
+}
+.texto_info{
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
 
 
+/* Configurações da SECTION/CONTEUDO */
 
+.container_conteudo{
+    padding: 50px 0px;
+}
+.conteudo_titulo{
+    padding-bottom: 20px;
+}
+.conjunto_texto_conteudo{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.conteudo_imagem{
+    border-radius: 8px;
+    border-left: 5px solid var(--cor-secundaria);
+}
 
 
 
@@ -143,13 +205,15 @@ body{
 
 
 
-
-
-
-
-
-
-
+/* LapTop */
+@media screen and (max-width: 1024px) {
+    #margin_page{
+        margin: 0% 6%;
+    }
+    .conjunto_texto_conteudo{
+        align-items: flex-start;
+    }
+}
 /* Tablet */
 @media screen and (max-width: 768px) {
     #margin_page{
@@ -158,27 +222,44 @@ body{
     .banner{
         background-position: 40%;
     }
+    .conjunto_texto_conteudo{
+        flex-direction: column;
+    }
 }
 /* Celular */
-@media screen and (max-width: 630px) {
-    .logo_cabecalho{
-        display: none;
+@media screen and (max-width: 767px) {
+    #margin_page{
+        margin: 0% 3%;
     }
     .container_cabecalho{
         justify-content: center;
         padding: 20px 0px;
     }
-    #margin_page{
-        margin: 0% 3%;
+    .logo_cabecalho{
+        display: none;
     }
     .titulo_banner{
-        font-size: 3.5rem;
-    }
-    .texto_banner{
-        font-size: 1.3rem;
-        line-height: 27px;
+        font-size: 2.7rem;
     }
     .banner{
         background-position: 70%;
     }
+    .titulo_info{
+        font-size: 1.8rem;
+    }
+    .texto_banner, .subtitulo_info{
+        font-size: 1.2rem;
+        line-height: 22px;
+    }
+    .bar_info{
+        width: 90%;
+    }
+    .conteudo_imagem{
+        width: 90%;
+    }
+    .container_banner{
+        height: 80vh;
+    }
+    
+    
 }
