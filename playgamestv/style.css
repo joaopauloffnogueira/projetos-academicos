@@ -85,3 +85,100 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    #margin_page{
+        margin: 0% 7%;
+    }
+    .banner{
+        background-position: 40%;
+    }
+}
+/* Celular */
+@media screen and (max-width: 630px) {
+    .logo_cabecalho{
+        display: none;
+    }
+    .container_cabecalho{
+        justify-content: center;
+        padding: 20px 0px;
+    }
+    #margin_page{
+        margin: 0% 3%;
+    }
+    .titulo_banner{
+        font-size: 2.7rem;
+    }
+    .texto_banner{
+        font-size: 1.2rem;
+        line-height: 22px;
+    }
+    .banner{
+        background-position: 70%;
+    }
+}
