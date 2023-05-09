@@ -1,8 +1,6 @@
 /* Configurações Globais da Paigna */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -24,14 +22,6 @@ h1, h2, h3, h4, p{
     font-family: var(--font-page);
     color: var(--cor-font);
 }
-
-
-
-
-
-
-
-
 
 /* Configuraçõe do HEADER/Menu */
 body{
@@ -60,8 +50,6 @@ body{
     color: var(--cor-font);
     font-size: 1.1rem;
 }
-
-
 /* Configurações da SECTION/BANNER */
 .banner{
     background-image: linear-gradient(360deg, #1c242b 30%, transparent 85%) ,url(image/472609.jpg);
@@ -93,11 +81,7 @@ body{
     border-radius: 8px;
     padding: 4px; 
 }
-
-
-
 /* Configurações da SECTION/INFORMAÇÃO */
-
 .container_conteudo_geral{
     display: flex;
     flex-direction: column;
@@ -135,10 +119,7 @@ body{
     line-height: 25px;
     padding-bottom: 20px;
 }
-
-
 /* Configurações da SECTION/CONTEUDO */
-
 .conteudo_titulo{
     padding-bottom: 20px;
 }
@@ -164,10 +145,7 @@ body{
 .botao_link_conteudo{
     margin: 5% 0% 3% 0%;
 }
-
-
 /* Configurações da SECTION/ANUNCIO */
-
 .container_anuncio_geral{
     padding: 40px 0px;
     border-radius: 16px;
@@ -206,9 +184,6 @@ body{
     padding: 10px 0px;
     box-shadow:  0px 4px 0px 0px rgba(0, 0, 0, 0.43);
 }
-
-
-
 .image1{
     background-image: linear-gradient(360deg, #1c242b 30%, transparent 85%) ,url(image/capa1.png);
 }
@@ -227,13 +202,7 @@ body{
 .image6{
     background-image: linear-gradient(360deg, #1c242b 30%, transparent 85%) ,url(image/capa6.png);
 }
-
-
-
-
 /* Configurações da SECTION/FOOTER */
-
-
 .footer_banner{
     background-image: linear-gradient(89deg, #1c242b 35%, transparent 85%) ,url(image/Frontier-Camp.jpg);
     background-repeat: no-repeat;
@@ -418,16 +387,14 @@ body{
         background-image: linear-gradient(360deg, #1c242b 40%, transparent 85%) ,url(image/capa3.png);
     }
     .image4{
-        background-image: linear-gradient(360deg, #1c242b 40%, transparent 85%) ,url(image/capa3.png);
+        background-image: linear-gradient(360deg, #1c242b 40%, transparent 85%) ,url(image/capa4.png);
     }
     .image5{
-        background-image: linear-gradient(360deg, #1c242b 40%, transparent 85%) ,url(image/capa3.png);
+        background-image: linear-gradient(360deg, #1c242b 40%, transparent 85%) ,url(image/capa5.png);
     }
     .image6{
-        background-image: linear-gradient(360deg, #1c242b 40%, transparent 85%) ,url(image/capa3.png);
+        background-image: linear-gradient(360deg, #1c242b 40%, transparent 85%) ,url(image/capa6.png);
     }
-
-
     .footer_container{
         gap: 10px;
     }
