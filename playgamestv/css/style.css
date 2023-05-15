@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 :root{
-    --cor-primaria: #1c242b;
+    --cor-primaria: #161d22;
     --cor-secundaria: #f6f6f648;
     --cor-font: #f6f6f6;
     --font-page: 'Josefin Sans', sans-serif;
@@ -52,7 +52,7 @@ body{
 }
 /* Configurações da SECTION/BANNER */
 .banner{
-    background-image: linear-gradient(360deg, #1c242b 30%, transparent 85%) ,url(image/472609.jpg);
+    background-image: linear-gradient(360deg, var(--cor-primaria) 30%, transparent 85%) ,url(../image/capas/banner/bannerheader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 32%;
@@ -117,6 +117,7 @@ body{
     text-align: center;
     font-size: 1.2rem;
     line-height: 25px;
+    margin: 0% 10%;
     padding-bottom: 20px;
 }
 /* Configurações da SECTION/CONTEUDO */
@@ -132,18 +133,22 @@ body{
     border-radius: 8px;
     border-left: 5px solid var(--cor-secundaria);
 }
+.conteudo_texto{
+    line-height: 20px;
+}
 .link_conteudo{
     text-decoration: none;
     font-family: var(--font-page);
     font-size: 1.2rem;
     font-weight: 400;
-    color: var(--cor-primaria);
-    background-color: #f6f6f6d8;
+    color: var(--cor-font);
+    background-color: var(--cor-primaria);
     border-radius: 8px;
     padding: 10px 40px;
+    box-shadow:  0px 4px 0px 0px #f6f6f648;
 }
 .botao_link_conteudo{
-    margin: 5% 0% 3% 0%;
+    margin: 10% 0% 1% 0%;
 }
 /* Configurações da SECTION/ANUNCIO */
 .container_anuncio_geral{
@@ -185,30 +190,29 @@ body{
     box-shadow:  0px 4px 0px 0px rgba(0, 0, 0, 0.43);
 }
 .image1{
-    background-image: linear-gradient(360deg, #1c242b 30%, transparent 85%) ,url(image/capa1.png);
+    background-image: linear-gradient(360deg, var(--cor-primaria) 30%, transparent 85%) ,url(../image/capas/anuncio/capa1.png);
 }
 .image2{
-    background-image: linear-gradient(360deg, #1c242b 30%, transparent 85%) ,url(image/capa2.png);
+    background-image: linear-gradient(360deg, var(--cor-primaria) 30%, transparent 85%) ,url(../image/capas/anuncio/capa2.png);
 }
 .image3{
-    background-image: linear-gradient(360deg, #1c242b 30%, transparent 85%) ,url(image/capa3.png);
+    background-image: linear-gradient(360deg, var(--cor-primaria) 30%, transparent 85%) ,url(../image/capas/anuncio/capa3.png);
 }
 .image4{
-    background-image: linear-gradient(360deg, #1c242b 30%, transparent 85%) ,url(image/capa4.png);
+    background-image: linear-gradient(360deg, var(--cor-primaria) 30%, transparent 85%) ,url(../image/capas/anuncio/capa4.png);
 }
 .image5{
-    background-image: linear-gradient(360deg, #1c242b 30%, transparent 85%) ,url(image/capa5.png);
+    background-image: linear-gradient(360deg, var(--cor-primaria) 30%, transparent 85%) ,url(../image/capas/anuncio/capa5.png);
 }
 .image6{
-    background-image: linear-gradient(360deg, #1c242b 30%, transparent 85%) ,url(image/capa6.png);
+    background-image: linear-gradient(360deg, var(--cor-primaria) 30%, transparent 85%) ,url(../image/capas/anuncio/capa6.png);
 }
 /* Configurações da SECTION/FOOTER */
 .footer_banner{
-    background-image: linear-gradient(89deg, #1c242b 35%, transparent 85%) ,url(image/Frontier-Camp.jpg);
+    background-image: linear-gradient(89deg, var(--cor-primaria) 35%, transparent 85%) ,url(../image/capas/banner/bannerfooter.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 100%;
-    height: 60vh;
     display: flex;
     align-items: center;
 }
@@ -217,11 +221,10 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 25px;
-    margin-left: 10%;
-    width: 30vw;
+    padding: 20px 0px;
 }
 .footer_logo{
-    width: 100%;
+    width: 400px;
 }
 .footer_titulo{
     font-family: var(--font-page);
@@ -261,7 +264,6 @@ body{
     font-family: var(--font-page);
     color: var(--cor-font);
     font-size: 0.7rem;
-    width: 50%;
     margin: 20px 0px;
     text-align: center;
 }
