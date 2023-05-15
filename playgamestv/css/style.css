@@ -55,7 +55,7 @@ h1, h2, h3, h4, p{
     font-size: 1.3rem;
 }
 #banner{
-    background-image: linear-gradient(88deg, var(--cor-primaria), transparent) ,url(../image/capas/banner/background8.jpg);
+    background-image: linear-gradient(88deg, var(--cor-primaria), transparent) ,url(../image/capas/background/banner.jpg);
     background-color: var(--cor-primaria);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -214,7 +214,7 @@ h1, h2, h3, h4, p{
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.613); 
 }
 .banner_parceria{
-    background-image: linear-gradient(88deg, var(--cor-primaria), transparent) ,url(../image/capas/banner/Dank-Caves.jpg);
+    background-image: linear-gradient(88deg, var(--cor-primaria), transparent) ,url(../image/capas/background/pather.jpg);
     background-color: var(--cor-primaria);
     background-repeat: no-repeat;
     background-size: cover;
@@ -274,7 +274,7 @@ h1, h2, h3, h4, p{
     gap: 20px;
 }
 #rodape{
-    background-image: linear-gradient(360deg, var(--cor-primaria) 1%, transparent 100%) ,url(../image/capas/banner/Mysterious-Vistas.jpg);
+    background-image: linear-gradient(360deg, var(--cor-primaria) 1%, transparent 100%) ,url(../image/capas/background/footer.jpg);
     background-color: var(--cor-primaria);
     background-attachment: fixed;
     background-repeat: no-repeat;
