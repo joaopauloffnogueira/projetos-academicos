@@ -1,6 +1,4 @@
-/* Configurações Globais da Paigna */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Krona+One&family=Montserrat:wght@400;600&display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -12,408 +10,504 @@
     --cor-font: #f6f6f6;
     --font-page: 'Josefin Sans', sans-serif;
 }
-#margin_page{
-    margin: 0% 15%;
+#margin_banner{
+    margin: 0% 10%;
 }
-#margin_section{
-    padding: 5% 0%;
+#margin_main{
+    margin: 0% 10%;
+}
+body{
+    background-color: var(--cor-primaria);
 }
 h1, h2, h3, h4, p{
     font-family: var(--font-page);
     color: var(--cor-font);
 }
-
-/* Configuraçõe do HEADER/Menu */
-body{
-    background-color: var(--cor-primaria);
+::-webkit-scrollbar {
+    width: 12px;
 }
-.cabecalho, .banner{
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+#cabecalho, #banner{
     background-color: var(--cor-primaria);
 }
 .container_cabecalho{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0px;
+    padding: 15px 0px;
 }
 .logo_cabecalho{
-    width: 100px;
+    width: 120px;
 }
 .lista_menu{
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 40px;
 }
 .link_menu{
     text-decoration: none;
     font-family: var(--font-page);
     color: var(--cor-font);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
-/* Configurações da SECTION/BANNER */
-.banner{
-    background-image: linear-gradient(360deg, var(--cor-primaria) 30%, transparent 85%) ,url(../image/capas/banner/bannerheader.jpg);
+#banner{
+    background-image: linear-gradient(88deg, var(--cor-primaria), transparent) ,url(../image/capas/banner/background8.jpg);
+    background-color: var(--cor-primaria);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: 32%;
 }
 .container_banner{
-    display: flex;
-    align-items: end;
-    height: 70vh; 
-    padding-bottom: 20px;
+    padding: 2% 0%;
 }
 .conjunto_banner{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50% 49%;  
+    grid-template-rows: 350px 350px; 
+    grid-gap: 10px;
 }
-.titulo_banner{
-    font-size: 5rem;
-    font-weight: 700;
+.bloco1{
+    grid-row: 1 / 3;
 }
-.texto_banner{
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-.bar_banner{
-    background-color: var(--cor-secundaria);
-    border-radius: 8px;
-    padding: 4px; 
-}
-/* Configurações da SECTION/INFORMAÇÃO */
-.container_conteudo_geral{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    padding: 40px 40px;
-    border-radius: 16px;
-    box-shadow:  0px 6px 0px 4px rgba(0, 0, 0, 0.311);
-}
-.conjunto_titulo_info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    padding-bottom: 40px;
-    text-align: center;
-}
-.titulo_info{
-    font-size: 2.2rem;
-}
-.subtitulo_info{
-    font-size: 1.3rem;
-    color: var(--cor-secundaria);
-}
-.bar_info{
-    width: 40%;
-    border-radius: 8px;
-    padding: 1px; 
-    background-color: var(--cor-secundaria);
-    
-}
-.texto_info{
-    text-align: center;
-    font-size: 1.2rem;
-    line-height: 25px;
-    margin: 0% 10%;
-    padding-bottom: 20px;
-}
-/* Configurações da SECTION/CONTEUDO */
-.conteudo_titulo{
-    padding-bottom: 20px;
-}
-.conjunto_texto_conteudo{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-.conteudo_imagem{
-    border-radius: 8px;
-    border-left: 5px solid var(--cor-secundaria);
-}
-.conteudo_texto{
-    line-height: 20px;
-}
-.link_conteudo{
-    text-decoration: none;
-    font-family: var(--font-page);
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: var(--cor-font);
-    background-color: var(--cor-primaria);
-    border-radius: 8px;
-    padding: 10px 40px;
-    box-shadow:  0px 4px 0px 0px #f6f6f648;
-}
-.botao_link_conteudo{
-    margin: 10% 0% 1% 0%;
-}
-/* Configurações da SECTION/ANUNCIO */
-.container_anuncio_geral{
-    padding: 40px 0px;
-    border-radius: 16px;
-    box-shadow: -7px 0 0px 0px rgba(0, 0, 0, 0.311), 7px 0 0px 0px rgba(0, 0, 0, 0.311);
-}
-.container_anuncio{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 5% 5%;
-}
-.anuncio{
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-    width: 350px;
-    height: 250px;
+.bloco1,.bloco2 {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    gap: 10px;
-    margin-bottom: 50px;
-}
-.titulo_anuncio,.texto_anuncio{
-    margin: 5px 10px;
-}
-.link_anuncio{
-    font-family: var(--font-page);
-    color: var(--cor-font);
+    position: relative;
+    overflow: hidden;
     text-decoration: none;
-    font-size: 1.2rem;
-    text-align: center;
-    background-color: var(--cor-primaria);
-    border-radius: 0px 0px 8px 8px;
-    padding: 10px 0px;
-    box-shadow:  0px 4px 0px 0px rgba(0, 0, 0, 0.43);
-}
-.image1{
-    background-image: linear-gradient(360deg, var(--cor-primaria) 30%, transparent 85%) ,url(../image/capas/anuncio/capa1.png);
-}
-.image2{
-    background-image: linear-gradient(360deg, var(--cor-primaria) 30%, transparent 85%) ,url(../image/capas/anuncio/capa2.png);
-}
-.image3{
-    background-image: linear-gradient(360deg, var(--cor-primaria) 30%, transparent 85%) ,url(../image/capas/anuncio/capa3.png);
-}
-.image4{
-    background-image: linear-gradient(360deg, var(--cor-primaria) 30%, transparent 85%) ,url(../image/capas/anuncio/capa4.png);
-}
-.image5{
-    background-image: linear-gradient(360deg, var(--cor-primaria) 30%, transparent 85%) ,url(../image/capas/anuncio/capa5.png);
-}
-.image6{
-    background-image: linear-gradient(360deg, var(--cor-primaria) 30%, transparent 85%) ,url(../image/capas/anuncio/capa6.png);
-}
-/* Configurações da SECTION/FOOTER */
-.footer_banner{
-    background-image: linear-gradient(89deg, var(--cor-primaria) 35%, transparent 85%) ,url(../image/capas/banner/bannerfooter.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 100%;
-    display: flex;
-    align-items: center;
-}
-.footer_container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    padding: 20px 0px;
-}
-.footer_logo{
-    width: 400px;
-}
-.footer_titulo{
-    font-family: var(--font-page);
-    color: var(--cor-font);
-    font-size: 1.5rem;
-    font-style: italic;
-    text-align: center;
-}
-.footer_container_social{
-    display: flex;
-    gap: 10px;
-}
-.footer_social_link{
-    width: 30px;
-}
-.footer_link{
-    font-family: var(--font-page);
-    color: var(--cor-font);
-    font-size: 1.5rem;
-    text-decoration: none;
-    background-color: var(--cor-primaria);
-    padding: 5px 100px;
     border-radius: 4px;
-    box-shadow:  0px 4px 0px 0px #f6f6f66e
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.613); 
+    border-bottom: 4px solid #161d22; 
 }
-.direitos_autorais{
+.bloco1 img, .bloco2 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;   
+}     
+.bloco1:hover img,.bloco2:hover img {
+    transform: scale(1.1);  
+}
+.conjunto_banner .gradiente {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(360deg, var(--cor-primaria) 30%, transparent 50%);
+    z-index: 1;
+}
+.conjunto_conteudo_banner{
+    z-index: 1;
+}
+.titulo_banner-1, .titulo_banner-2{
+    text-shadow: 0px 0px 10px black;
+    text-transform: uppercase;
+    padding: 0px 20px;
+}
+.titulo_banner-1{
+    font-size: 3rem;
+}
+.titulo_banner-2{
+    font-size: 2.3rem;
+}
+.texto_banner-1{
+    padding: 10px 20px 40px 20px;
+    font-size: 1.6rem;
+    line-height: 28px;
+}
+.texto_banner-2{
+    padding: 5px 20px 20px 20px;
+    font-size: 1.6rem;
+    line-height: 25px;
+}
+#playlist{
+    padding: 100px 0px;
+}
+.container_info_conteudo{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 2% 15% 0% 15%;
+    gap: 5px; 
+    padding-top: 0px;
 }
-.img_rag{
-    width: 200px;
+.bar_conteudo{
+    width: 25%;
+    padding: 2px 4px;
+    background-color: var(--cor-secundaria);
 }
-.text_footer{
-    font-family: var(--font-page);
-    color: var(--cor-font);
-    font-size: 0.7rem;
-    margin: 20px 0px;
-    text-align: center;
+.titulo_info_conteudo{
+    font-size: 2rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* LapTop */
-@media screen and (max-width: 1024px) {
-    #margin_page{
-        margin: 0% 6%;
-    }
-    .conjunto_texto_conteudo{
-        align-items: flex-start;
-    }
-    .container_banner{
-        height: 100vh;
-    }
-    .banner{
-        background-position: 50%;
-    }
+.subtitulo_info_conteudo{
+    color: var(--cor-secundaria);
 }
-/* Tablet */
-@media screen and (max-width: 768px) {
-    #margin_page{
-        margin: 0% 7%;
-    }
-    .banner{
-        background-position: 40%;
-    }
-    .conjunto_texto_conteudo{
-        flex-direction: column;
-    }
+.conjunto_playlist{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 27% 27% 27%;  
+    grid-template-rows: 210px 210px; 
+    grid-gap: 40px;
+    padding: 80px 0px;  
+}
+.anuncio{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.613); 
+    border-bottom: 4px solid #161d22; 
+}
+.anuncio img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;   
+}     
+.anuncio:hover img{
+    transform: scale(1.1);  
+}
+.anuncio .gradiente {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(360deg, var(--cor-primaria) 30%, transparent 60%);
+    z-index: 1;
+}
+.conjunto_conteudo_anuncio{
+    padding: 0px 0px 10px 15px ;
+    z-index: 1;
+}
+.titulo_anuncio{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding-bottom: 6px;
     
 }
-/* Celular */
-@media screen and (max-width: 767px) {
-    .banner{
-        background-image: linear-gradient(360deg, #1c242b 40%, transparent 85%) ,url(image/472609.jpg);
-    }
-    #margin_page{
+.texto_anuncio{
+    font-size: 1.1rem;
+    line-height: 22px;
+}
+.link_playlist{
+    padding-top: 20px;
+    text-align: center;
+    
+}
+.link_playlist a{
+    font-family: var(--font-page);
+    font-size: 1.3rem;
+    color: var(--cor-font);
+    padding: 15px 40px;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: var(--cor-secundaria);
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.613); 
+}
+.banner_parceria{
+    background-image: linear-gradient(88deg, var(--cor-primaria), transparent) ,url(../image/capas/banner/Dank-Caves.jpg);
+    background-color: var(--cor-primaria);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+}
+.parceria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 30px 0px;
+}
+.parceria img{
+    width: 200px;
+}
+#sobre{
+    padding: 100px 0px;
+}
+.container_sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 30px;
+}
+.conjunto_sobre{
+    text-align: center;
+    width: 60%;
+}
+.texto_sobre{
+    font-size: 1.5rem;
+    line-height: 25px;
+}
+.social_link{
+    font-family: var(--font-page);
+    font-size: 1.2rem;
+    color: var(--cor-font);
+    text-align: center;
+    background-color: var(--cor-secundaria);
+    padding: 15px 20px;
+    border-radius: 4px;
+}
+.face:hover{
+    background-color: #165b8c;
+}
+.insta:hover{
+    background-image: linear-gradient(33deg, #3f729b, #8134AF, #DD2A7B, #FEDA77, #F58529);
+}
+.you:hover{
+    background-color: #c4302b;
+}
+.conjunto_social{
+    display: flex;
+    gap: 20px;
+}
+#rodape{
+    background-image: linear-gradient(360deg, var(--cor-primaria) 1%, transparent 100%) ,url(../image/capas/banner/Mysterious-Vistas.jpg);
+    background-color: var(--cor-primaria);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container_rodape{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.conjunto_direitos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+.direitos p{
+    font-size: 0.9rem;
+}
+@media screen and (max-width: 1440px) {
+    #margin_banner{
         margin: 0% 3%;
+    } 
+    .conjunto_playlist{
+        grid-template-columns: 45% 45%;  
+        grid-template-rows: 300px 300px 300px;
     }
-    .container_conteudo_geral{
-        padding: 20px;
+    .conjunto_conteudo_anuncio{
+        padding: 0px 0px 25px 15px ;
+    }
+    .titulo_anuncio{
+        font-size: 2.5rem;
+        padding-bottom: 15px;
+    }
+    .texto_anuncio{
+        font-size: 1.7rem;
+    }
+    .conjunto_sobre{
+        text-align: center;
+        width: 85%;
+        padding: 40px 0px;
+    }
+
+}
+@media screen and (max-width: 1000px) {
+    .container_banner{
+        padding: 6% 0%;
+    }
+    .conjunto_banner{
+        justify-content: center;
+        grid-template-columns: 100%;
+        grid-template-rows: 300px  300px 500px 500px;
+    }
+    .conjunto_conteudo_banner{
+        margin: 0px;
+        padding: 0px 20px 20px 20px;
+    }
+    .titulo_banner-1, .titulo_banner-2{
+        font-size: 3.5rem;
+        padding: 0px 8px;
+        text-shadow: 0px 0px 10px black;
+    }
+    .texto_banner-1,.texto_banner-2{
+        font-size: 2rem;
+        padding: 10px 8px;
+        line-height: 35px;
+    }
+    .bloco1 .gradiente {
+        background-image: linear-gradient(360deg, var(--cor-primaria) 35%, transparent 80%);
+    }
+    .bloco2 .gradiente {
+        background-image: linear-gradient(360deg, var(--cor-primaria) 35%, transparent 80%);
+    }
+    .conjunto_playlist{
+        grid-template-columns: 80%;  
+        grid-template-rows: 400px 400px 400px;
+    }
+    .celular{
+        display: none;
+    }
+    .bar_playlist{
+        width: 50%;
+    }
+    .conjunto_conteudo_anuncio{
+        padding: 0px 0px 30px 20px ;
+    }
+    .titulo_anuncio{
+        font-size: 2.7rem;
+        padding-bottom: 10px;
+    }
+    .texto_anuncio{
+        font-size: 1.9rem;
+        line-height: 35px;
+    }
+
+}
+@media screen and (max-width: 700px) {
+    .menu{
+        display: none;
     }
     .container_cabecalho{
         justify-content: center;
-        padding: 20px 0px;
+        padding: 10px 0px;
     }
-    .logo_cabecalho{
-        display: none;
+    .titulo_banner-1, .titulo_banner-2{
+        font-size: 3.2rem;
     }
-    .titulo_banner{
-        font-size: 2.7rem;
+    .texto_banner-1,.texto_banner-2{
+        font-size: 1.7rem;
+        line-height: 32px;
     }
-    .banner{
-        background-position: 70%;
+    .bloco2 .gradiente {
+        background-image: linear-gradient(360deg, var(--cor-primaria) 35%, transparent 80%);
     }
-    .titulo_info{
-        font-size: 1.8rem;
+    .conjunto_playlist{
+        grid-template-columns: 80%;  
+        grid-template-rows: 300px 300px 300px;
     }
-    .texto_banner, .subtitulo_info{
+    .conjunto_conteudo_anuncio{
+        padding: 0px 0px 15px 15px ;
+    }
+    .titulo_anuncio{
+        font-size: 2.1rem;
+        padding-bottom: 6px;
+    }
+    .texto_anuncio{
+        font-size: 1.6rem;
+        line-height: 35px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .container_banner{
+        padding: 10% 0%;
+    }
+    .conjunto_banner{
+        grid-template-rows: 200px  200px 400px 400px;
+    }
+    .conjunto_conteudo_banner{
+        padding: 0px 5px 5px 5px;
+    }
+    .titulo_banner-1, .titulo_banner-2{
+        font-size: 2.2rem;
+    }
+    .texto_banner-1,.texto_banner-2{
         font-size: 1.2rem;
         line-height: 22px;
     }
-    .bar_info{
-        width: 90%;
+    .conjunto_playlist{
+        grid-template-columns: 95%;
     }
-    .conteudo_imagem{
-        width: 90%;
+    .link_playlist a{
+        padding: 20px 60px;
+        font-size: 1.4rem;
     }
-    .container_banner{
-        height: 80vh;
+    .conjunto_social{
+        display: flex;
+        flex-direction: column;
     }
-    .link_conteudo{
-        padding: 10px 7px;
+    .social_link{
+        padding: 20px 60px;
+    }
+    .conjunto_direitos{
         font-size: 1rem;
-        font-weight: 700;
     }
-    .image1{
-        background-image: linear-gradient(360deg, #1c242b 40%, transparent 85%) ,url(image/capa1.png);
+    .conjunto_conteudo_anuncio{
+        padding: 0px 0px 15px 15px ;
     }
-    .image2{
-        background-image: linear-gradient(360deg, #1c242b 40%, transparent 85%) ,url(image/capa2.png);
+    .titulo_anuncio{
+        font-size: 2rem;
+        padding-bottom: 10px;
     }
-    .image3{
-        background-image: linear-gradient(360deg, #1c242b 40%, transparent 85%) ,url(image/capa3.png);
-    }
-    .image4{
-        background-image: linear-gradient(360deg, #1c242b 40%, transparent 85%) ,url(image/capa4.png);
-    }
-    .image5{
-        background-image: linear-gradient(360deg, #1c242b 40%, transparent 85%) ,url(image/capa5.png);
-    }
-    .image6{
-        background-image: linear-gradient(360deg, #1c242b 40%, transparent 85%) ,url(image/capa6.png);
-    }
-    .footer_container{
-        gap: 10px;
-    }
-    .footer_banner{
-        background-image: linear-gradient(89deg, #1c242bba 100%, transparent) ,url(image/Frontier-Camp.jpg);
-    }
-    .img_rag{
-        width: 170px;
-    }
-    .footer_container{
-        margin: auto;
-        width: auto;
-    }
-    .text_footer{
-        width: 100%;
-    }
-    .footer_logo{
-        width: 70%;
+    .texto_anuncio{
+        font-size: 1.6rem;
+        line-height: 26px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
