@@ -244,6 +244,9 @@ h1, h2, h3, h4, p{
     padding-top: 30px;
 }
 .conjunto_sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     text-align: center;
     width: 60%;
 }
@@ -444,6 +447,7 @@ h1, h2, h3, h4, p{
         display: flex;
         flex-direction: column;
     }
+
     .social_link{
         padding: 20px 60px;
     }
