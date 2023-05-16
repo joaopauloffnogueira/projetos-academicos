@@ -1,4 +1,12 @@
+
+
+
+
+/* Configurações Globais da Paigna */
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -31,6 +39,14 @@ h1, h2, h3, h4, p{
     border-radius: 10px;
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
+
+   
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* Configuraçõe do HEADER/Menu OK */
 #cabecalho, #banner{
     background-color: var(--cor-primaria);
 }
@@ -54,6 +70,13 @@ h1, h2, h3, h4, p{
     color: var(--cor-font);
     font-size: 1.3rem;
 }
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* Configurações da SECTION/BANNER OK */
 #banner{
     background-image: linear-gradient(88deg, var(--cor-primaria), transparent) ,url(../image/capas/background/banner.jpg);
     background-color: var(--cor-primaria);
@@ -126,6 +149,15 @@ h1, h2, h3, h4, p{
     font-size: 1.6rem;
     line-height: 25px;
 }
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* Configurações da SECTION/PLAYLIST  */
 #playlist{
     padding: 100px 0px;
 }
@@ -213,6 +245,12 @@ h1, h2, h3, h4, p{
     background-color: var(--cor-secundaria);
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.613); 
 }
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Configurações da SECTION/PARCERIA  */
+
 .banner_parceria{
     background-image: linear-gradient(88deg, var(--cor-primaria), transparent) ,url(../image/capas/background/pather.jpg);
     background-color: var(--cor-primaria);
@@ -232,6 +270,13 @@ h1, h2, h3, h4, p{
 .parceria img{
     width: 200px;
 }
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Configurações da SECTION/SOBRE  */
+
 #sobre{
     padding: 100px 0px;
 }
@@ -276,29 +321,56 @@ h1, h2, h3, h4, p{
     display: flex;
     gap: 20px;
 }
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* Configurações do FOOTER  */
+
 #rodape{
-    background-image: linear-gradient(360deg, var(--cor-primaria) 1%, transparent 100%) ,url(../image/capas/background/footer.jpg);
+    background-image: linear-gradient(88deg, #161d22ec 100%, transparent 100%) ,url(../image/capas/background/pather.jpg);
     background-color: var(--cor-primaria);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .container_rodape{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 0px;
 }
 .conjunto_direitos{
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     gap: 20px;
 }
-.direitos p{
+.direitos_rag p{
     font-size: 0.9rem;
-    text-align: start;
 }
+.logo_play{
+    width: 200px;
+}
+.direitos_play{
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-style: italic;
+}
+.link_play{
+    font-family: var(--font-page);
+    color: var(--cor-font);
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color: #161d220a;
+    padding: 5px 200px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 0px 0px var(--cor-secundaria);
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+   
+/* Reponsivo Revisado e Concluido */
 @media screen and (max-width: 1440px) {
     #margin_banner{
         margin: 0% 3%;
@@ -395,8 +467,7 @@ h1, h2, h3, h4, p{
         background-image: linear-gradient(360deg, var(--cor-primaria) 35%, transparent 80%);
     }
     .conjunto_playlist{
-        grid-template-columns: 80%;  
-        grid-template-rows: 300px 300px 300px;
+        grid-template-rows: 250px 250px 250px;
     }
     .conjunto_conteudo_anuncio{
         padding: 0px 0px 15px 15px ;
@@ -427,23 +498,12 @@ h1, h2, h3, h4, p{
         font-size: 1.2rem;
         line-height: 22px;
     }
-    .titulo_info_conteudo{
-        font-size: 2.7rem;
-    }
-    .subtitulo_info_conteudo{
-        font-size: 1.6rem;
-    }
-    .bar_conteudo{
-        width: 80%;
-    }
     .conjunto_playlist{
-        grid-template-columns: 90%;
-        grid-template-rows: 250px  250px 250px;
+        grid-template-columns: 95%;
     }
     .link_playlist a{
-        padding: 25px 80px;
-        font-size: 1.5rem;
-        font-weight: 800;
+        padding: 20px 60px;
+        font-size: 1.4rem;
     }
     .conjunto_social{
         display: flex;
@@ -459,75 +519,19 @@ h1, h2, h3, h4, p{
         padding: 0px 0px 15px 15px ;
     }
     .titulo_anuncio{
-        font-size: 1.7rem;
+        font-size: 2rem;
         padding-bottom: 10px;
     }
     .texto_anuncio{
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         line-height: 26px;
     }
-    .social_link{
-        padding: 25px 80px;
-        font-size: 1.5rem;
-        font-weight: 800;
+    .link_play{
+        padding: 5px 100px;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
-
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
