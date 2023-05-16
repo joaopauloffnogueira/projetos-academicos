@@ -423,8 +423,18 @@ h1, h2, h3, h4, p{
         font-size: 1.2rem;
         line-height: 22px;
     }
+    .titulo_info_conteudo{
+        font-size: 2.7rem;
+    }
+    .subtitulo_info_conteudo{
+        font-size: 1.6rem;
+    }
+    .bar_conteudo{
+        width: 80%;
+    }
     .conjunto_playlist{
-        grid-template-columns: 95%;
+        grid-template-columns: 85%;
+        grid-template-rows: 250px  250px 250px;
     }
     .link_playlist a{
         padding: 20px 60px;
