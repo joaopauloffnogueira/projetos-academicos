@@ -22,15 +22,11 @@
     margin: 0% 15%;
 }
 body{
-    height: 400vh;
     background-color: var(--cor-primaria);
 }
 h1, h2, h3, h4, p{
     font-family: var(--font-page);
     color: var(--cor-font);
-}
-section{
-    margin-bottom: 10%;
 }
 ::-webkit-scrollbar {
     width: 12px;
@@ -84,6 +80,7 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
+    margin-bottom: 10%;
 }
 .container_banner{
     height: 90vh;
@@ -163,13 +160,6 @@ section{
 }
 
 
-
-
-
-
-
-
-
 .container_etapas{
     margin: 5% 5%;
 }
@@ -221,16 +211,147 @@ section{
     margin: 5% 10%;
 }
 
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
 
+/* Configurações da SECTION/PLAYLIST  */
+#playlist{
+    padding: 100px 0px;
+}
+.container_info_conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px; 
+    padding-top: 0px;
+}
+.bar_conteudo{
+    width: 25%;
+    padding: 2px 4px;
+    background-color: var(--cor-secundaria);
+}
+.titulo_info_conteudo{
+    font-size: 2rem;
+}
+.subtitulo_info_conteudo{
+    color: var(--cor-secundaria);
+}
+.conjunto_playlist{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 27% 27% 27%;  
+    grid-template-rows: 210px 210px; 
+    grid-gap: 40px;
+    padding: 80px 0px;  
+}
+.anuncio{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.613); 
+    border-bottom: 4px solid #161d22; 
+}
+.anuncio img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;   
+}     
+.anuncio:hover img{
+    transform: scale(1.1);  
+}
+.anuncio .gradiente {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(360deg, var(--cor-primaria) 30%, transparent 60%);
+    z-index: 1;
+}
+.conjunto_conteudo_anuncio{
+    padding: 0px 0px 10px 15px;
+    z-index: 1;
+}
+.titulo_anuncio{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+    
+}
+.texto_anuncio{
+    font-size: 1.1rem;
+    line-height: 22px;
+}
+.link_playlist{
+    padding-top: 20px;
+    text-align: center;
+    
+}
+.link_playlist a{
+    font-family: var(--font-page);
+    font-size: 1.3rem;
+    color: var(--cor-font);
+    padding: 15px 40px;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: var(--cor-secundaria);
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.613); 
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
+/* Configurações do FOOTER  */
+
+#rodape{
+    background-image: linear-gradient(88deg, #161d22ec 100%, transparent 100%) ,url(../image/capas/background/pather.jpg);
+    background-color: var(--cor-primaria);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container_rodape{
+    padding: 40px 0px;
+}
+.conjunto_direitos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.direitos_rag p{
+    font-size: 0.9rem;
+}
+.logo_play{
+    width: 200px;
+}
+.direitos_play{
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-style: italic;
+}
+.link_play{
+    font-family: var(--font-page);
+    color: var(--cor-font);
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color: #161d220a;
+    padding: 5px 200px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 0px 0px var(--cor-secundaria);
+}
 
 
-
-
-
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
 
@@ -252,9 +373,23 @@ section{
         font-size: 1.7rem;
         line-height: 30px;
     }
+    .conjunto_playlist{
+        grid-template-columns: 40% 40%;  
+        grid-template-rows: 250px 250px 250px;
+    }
+    .conjunto_conteudo_anuncio{
+        padding: 0px 0px 10px 10px ;
+    }
+    .titulo_anuncio{
+        font-size: 1.9rem;
+        padding-bottom: 10px;
+    }
+    .texto_anuncio{
+        font-size: 1.3rem;
+    }
 
 }
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1000px){
     .conjunto_etapas{
         flex-direction: column;
     }
@@ -269,6 +404,25 @@ section{
         width: 60%;
         padding-top: 20px;
     }
+    .conjunto_playlist{
+        grid-template-columns: 80%;  
+        grid-template-rows: 250px 250px 250px;
+    }
+    .celular{
+        display: none;
+    }
+    .bar_playlist{
+        width: 50%;
+    }
+
+    .titulo_anuncio{
+        font-size: 2rem;
+        padding-bottom: 5px;
+    }
+    .texto_anuncio{
+        font-size: 1.3rem;
+        line-height: 35px;
+    }
 }
 @media screen and (max-width: 790px) {
     #margin{
@@ -281,8 +435,23 @@ section{
         font-size: 1.5rem;
         line-height: 27px;
     }
+    .conteudo_imagem{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .conjunto_playlist{
+        grid-template-rows: 250px 250px 250px;
+    }
+    .titulo_anuncio{
+        font-size: 1.9rem;
+        padding-bottom: 6px;
+    }
+    .texto_anuncio{
+        font-size: 1.2rem;
+        line-height: 24px;
+    }
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 540px) {
     #margin{
         margin: 0% 5%; 
     }
@@ -293,18 +462,17 @@ section{
         justify-content: center;
         padding: 10px 0px;
     }
+    .banner{
+        background-image: linear-gradient(360deg, var(--cor-primaria) 35%, transparent 85%) ,url(../image/capas/background/banner.png);
+        background-position-y: -100px;
+    }
     .titulo_banner{
         font-size: 3.6rem; 
     }
     .texto_banner{
         font-size: 1.3rem;
         line-height: 25px;
-    }
-}
-@media screen and (max-width: 500px) {
-    .banner{
-        background-image: linear-gradient(360deg, var(--cor-primaria) 40%, transparent 85%) ,url(../image/capas/background/banner.png);
-    }
+    }  
     .conteudo_info{
         padding: 50px 0px;
     }
@@ -316,9 +484,6 @@ section{
     }
     .subtitulo_info{
         font-size: 1.2rem;
-    }
-    .titulo_banner{
-        font-size: 3.4rem; 
     }
     .conteudo_imagem{
         width: 100%;
@@ -334,17 +499,52 @@ section{
         padding: 5px;
         margin: 5% 10%;
     }
-
+    .conjunto_playlist{
+        grid-template-columns: 100%;
+    }
+    .link_playlist a{
+        padding: 20px 60px;
+        font-size: 1.4rem;
+    }
+    .conjunto_direitos{
+        font-size: 1rem;
+    }
+    .conjunto_conteudo_anuncio{
+        padding: 0px 0px 15px 15px ;
+    }
+    .titulo_anuncio{
+        font-size: 1.7rem;
+    }
+    .link_play{
+        padding: 5px 100px;
+    }
 }
 @media screen and (max-width: 360px) {
     .titulo_banner{
         font-size: 3rem; 
+    }
+    .titulo_anuncio{
+        font-size: 1.5rem;
+    }
+    .conjunto_playlist{
+        grid-template-columns: 100%;  
+        grid-template-rows: 200px 200px 200px;
+    }
+    .conjunto_conteudo_anuncio{
+        padding: 0px 0px 5px 7px;
+        z-index: 1;
+    }
+    .texto_anuncio{
+        font-size: 1.1rem;
+        line-height: 20px;
     }
 
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
 
 
 
