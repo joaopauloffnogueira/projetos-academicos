@@ -1,7 +1,4 @@
 
-
-
-
 /* Configurações Globais da Paigna */
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Krona+One&family=Montserrat:wght@400;600&display=swap');
@@ -46,7 +43,8 @@ h1, h2, h3, h4, p{
 /* --------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
-/* Configuraçõe do HEADER/Menu OK */
+/* Configuraçõe do HEADER/Menu */
+
 #cabecalho, #banner{
     background-color: var(--cor-primaria);
 }
@@ -76,7 +74,8 @@ h1, h2, h3, h4, p{
 /* --------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
-/* Configurações da SECTION/BANNER OK */
+/* Configurações da SECTION/BANNER */
+
 #banner{
     background-image: linear-gradient(88deg, var(--cor-primaria), transparent) ,url(../image/capas/background/banner.jpg);
     background-color: var(--cor-primaria);
@@ -158,6 +157,7 @@ h1, h2, h3, h4, p{
 
 
 /* Configurações da SECTION/PLAYLIST  */
+
 #playlist{
     padding: 100px 0px;
 }
@@ -370,7 +370,7 @@ h1, h2, h3, h4, p{
 /* --------------------------------------------------------------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------------------------------------------------------------- */
    
-/* Reponsivo Revisado e Concluido */
+/* Reponsivo */
 @media screen and (max-width: 1440px) {
     #margin_banner{
         margin: 0% 3%;
