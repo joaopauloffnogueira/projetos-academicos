@@ -27,3 +27,8 @@
 <lil> <a href="https://joaopauloffnogueira.github.io/projetos-academicos/portfolio/"> Portfolio - Alura </a><br>
 <lil> <a href="https://joaopauloffnogueira.github.io/projetos-academicos/playgamestv/"> Portfolio - Alura </a>
 <br><br>
+ 
+ <p>Projetos Realizado</p>
+ <lil> <a href="https://joaopauloffnogueira.github.io/projetos-academicos/portfolio/"> Portfolio - Meu Portfolio </a><br>
+ <lil> <a href="https://joaopauloffnogueira.github.io/projetos-academicos/playgamestv/"> PlayGamesTV - Site do meu canal no YouTube </a>
+ <br><br>
