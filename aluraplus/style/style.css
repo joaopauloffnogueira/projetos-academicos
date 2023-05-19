@@ -24,6 +24,8 @@ body{
     background-image: url(../image/Background.png);
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
 }
 .container{
     height: 100vh;
@@ -56,4 +58,23 @@ body{
 }
 .container__caixa{
     margin: 0 6em;
+}
+.container__image{
+    margin: 1em 0 2em 0;
+}
+.secundario__imagem{
+    width: 80%;
+}
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+.descricao__texto{
+    color: var(--cinza-secundario);
 }
