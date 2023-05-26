@@ -30,6 +30,8 @@
     top: 100%; /* Com o position relative do cabecalho, esse 100% fez com que a lista fosse aberta na parte de baixo no menu pois 0% ele fica normal ocupando todo o espaço, valor negativo como -50% ele irá subir e valor positivo ele irá descer */
     width: 60vw;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    background-color: var(--branco);
 }
 .container__botao:checked ~ .lista-menu{
     display: block; /* Quando a caixa da lista for clicado a lista volta a aparecer */
@@ -52,4 +54,58 @@
 }
 .container__botao{
     display: none;
+}
+
+.container__titulo{
+    display: none;
+}
+
+.opcoes{
+    display: none;
+}
+
+
+
+/* min usar quando o site for feito primeiro para celular e max quando o site for feito primeiro no computador */
+/* Configurações para Tablet 1024px*/
+@media screen and (min-width: 1024px) {
+
+    /* Configurações para a logo AluraBooks */
+    .container__titulo, .container__titulo--negrito{
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+    }
+    .container__titulo{
+        font-weight: 400;
+        display: block;
+    }
+    .container__titulo--negrito{
+        font-weight: 700;
+    }
+
+    /* Lista do menu Categoria */
+    .opcoes{
+        display: flex;
+    }
+    .opcoes__item{
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+    .opcoes__link{
+        text-decoration: none;
+        color: var(--preto);
+    }
+    .container__imagem-transparente{
+        display: none;
+    }
+    .cabecalho__menu-hamburguer{
+        display: none;
+    }
+    .opcoes__botao:checked ~ .lista-menu{
+        display: block;
+        width: auto;
+    }
+    .opcoes__botao{
+        display: none;
+    }
 }

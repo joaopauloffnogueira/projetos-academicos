@@ -31,3 +31,22 @@
     background: url("../image/Pesquisa.svg") no-repeat;
     background-position: 0.5em;
 }
+
+
+
+/* Configurações para Tablet 1024px*/
+@media screen and (min-width: 1024px) {
+
+    /* Configurações do Banner */
+    .banner__titulo{
+        font-size: 2.1rem;
+    }
+    .banner__pesquisa{
+        width: 50%;
+    }
+    .banner__pesquisa::placeholder{
+        background-position: 7em;
+    }
+
+
+}
