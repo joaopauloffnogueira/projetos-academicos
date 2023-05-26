@@ -30,6 +30,7 @@
 <lil> <a href="https://editor.p5js.org/JoaoPauloF/sketches/Kn3Qz5AWL"> Projeto Crossing the Street - Alura </a> <br>
 <lil> <a href="https://editor.p5js.org/JoaoPauloF/sketches/Y7e2McZ6o"> Projeto Game Pong - Alura </a><br>
 <lil> <a href="https://joaopauloffnogueira.github.io/projetos-academicos/portfolio/"> Portfolio - Alura </a><br>
+ <lil> <a href="https://joaopauloffnogueira.github.io/projetos-academicos/alurabooks/"> AluraBooks - Alura </a><br>
 <br><br>
  
 
