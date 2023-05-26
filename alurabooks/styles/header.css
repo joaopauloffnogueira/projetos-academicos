@@ -1,0 +1,55 @@
+
+/* ------------------------------- Configurações do Header ------------------------------- */
+
+.cabecalho__menu-hamburguer{
+    width: 24px;
+    height: 24px;
+    background-image: url("../image/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+.cabecalho{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    position: relative; /* Com ele você pode alterar as posições como top, left, right e bottom */
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+.container__imagem{
+    padding: 1em;
+}
+/* Efeito do menu hamburguer do HTML para criar uma lista que apareça quando o botão check for acionado */
+.lista-menu{
+    display: none; /* Para a lista não aparecer quando a página for carregada */
+    position: absolute;/* O absolute fez com que a lista ficasse por cima do menu hamburguer */
+    top: 100%; /* Com o position relative do cabecalho, esse 100% fez com que a lista fosse aberta na parte de baixo no menu pois 0% ele fica normal ocupando todo o espaço, valor negativo como -50% ele irá subir e valor positivo ele irá descer */
+    width: 60vw;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+.container__botao:checked ~ .lista-menu{
+    display: block; /* Quando a caixa da lista for clicado a lista volta a aparecer */
+}
+.lista-menu__titulo,
+.lista-menu__item{
+    padding: 1em;
+    background-color: var(--branco); 
+}
+.lista-menu__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+.lista-menu__link{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+.container__botao{
+    display: none;
+}
