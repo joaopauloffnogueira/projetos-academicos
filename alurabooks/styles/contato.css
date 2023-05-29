@@ -32,3 +32,31 @@
     background-position: 0.5em;
 }
 
+/* Configurações para Tablet 1024px*/
+@media screen and (min-width: 1024px) {
+
+    .contato{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contato__titulo{
+        font-size: 24px;
+    }
+    .contato__descricao{
+        margin-right: 1em;
+        width: 30%;
+    }
+    .contato__email{
+        width: 30%;
+    }
+
+}
+
+/* Configurações para PC 1728px*/
+@media screen and (min-width: 1728px) {
+    .contato{
+        padding: 3em 10vw;
+    }
+    
+}
