@@ -1,0 +1,121 @@
+
+
+
+
+
+
+.cabecalho__container{
+    display: flex; /* Display flex faz com que seus filhos fiquem em linhas, um do lado do outro, assim possibilitante alterações na estrutura do site */
+    justify-content: space-between; /* Os ítens são distribuídos de forma igual ao longo da linha; o primeiro ítem junto à borda inicial da linha, o último junto à borda final da linha. */
+    align-items: center; /* ítens são centralizados no eixo transversal. */
+    position: fixed;
+    top: 0;
+}
+
+.cabecalho__pesquisar__item{
+    display: none;
+}
+
+
+.rodape__container{
+    display: flex;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    flex-flow: column wrap;
+}
+
+
+.superior__secao__container{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: scroll;
+    gap: 15px;
+}
+
+.menu__container{
+    position: fixed;
+    bottom: 0%;
+    height: 74px;
+    width: 100%;
+}
+
+.menu__lista{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.menu__lista li{
+    align-self: center;
+}
+
+.menu__itens{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu__lista:nth-child(2),
+.menu__lista:nth-child(3),
+.menu__lista:nth-child(4){
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 834px){
+    .cabecalho__pesquisar__item{
+        display: block;
+    }
+    .rodape__container{
+        justify-content: space-between;
+    }
+
+    .menu__container{
+        left: 0;
+        height: auto;
+        width: 74px;
+        top: 80px;
+    }
+    .menu__lista{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 15px;
+        gap: 33px;
+    }
+}
+
+@media(min-width: 1440px){
+    .menu__container{
+        width: 239px;
+        overflow: scroll;
+    }
+
+    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4){
+        display: flex;
+    }
+
+    .menu__lista{
+        height: auto;
+        padding: 20px 17px 20px 15px;
+        gap: 15px;
+    }
+
+    .menu__itens{
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .menu__lista:nth-child(3){
+        flex-direction: column-reverse;
+    }
+}
