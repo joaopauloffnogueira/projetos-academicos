@@ -63,9 +63,17 @@
 }
 
 
+.videos__item {
+    height: 303px;
+    width: 280px;
+    flex-grow: 1;
+}
 
-
-
+.videos__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
 
 
@@ -118,4 +126,20 @@
     .menu__lista:nth-child(3){
         flex-direction: column-reverse;
     }
+
+    .jogos{
+        order: 3;
+    }
+    .filmes{
+        order: 2;
+    }
+    .premium{
+        order: 1;
+    }
+    .maispaginas{
+        order: 4;
+    }
 }
+
+
+
