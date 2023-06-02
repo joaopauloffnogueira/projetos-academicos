@@ -5,8 +5,9 @@
 }
 
 .secao-horizontal .cartao__imagem{
-    grid-column: 1/2;
-    grid-row: 1/4;
+    /* grid-column: 1/2;
+    grid-row: 1/4; */
+    grid-area: 1/1/4/2; /* Começa pela linhas start depois column start e linha end e column end */
 }
 
 .secao-horizontal .cartao__botao{
