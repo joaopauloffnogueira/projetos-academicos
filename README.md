@@ -5,6 +5,7 @@
 <p>Projetos Realizado</p>
 <lil> <a href="https://joaopauloffnogueira.github.io/projetos-academicos/portfolio/"> Meu Portfolio </a><br>
 <lil> <a href="https://joaopauloffnogueira.github.io/projetos-academicos/playgamestv/"> PlayGamesTV - Site do meu canal no YouTube </a>
+<lil> <a href="https://joaopauloffnogueira.github.io/projetos-academicos/mochila/"> Mochila de Viagem </a>
 <br><br>
   
 <p>Projetos - Plataforma de Ensino | Curso em Vídeo</p> 
