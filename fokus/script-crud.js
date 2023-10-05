@@ -31,14 +31,17 @@ listLocalStorage.forEach(element => {
 buttonAddTask.addEventListener("click", ()=>{
     formTask.classList.remove("hidden")
     titleForm.textContent = "Adicionando tarefa"
+    const taskName = formTask.elements["form-textarea"]
+    taskName.value = ""
 
-    formTask.addEventListener("submit", (evento)=>{
+    formTask.onsubmit = (evento)=>{
         evento.preventDefault()
-        const taskName = evento.target.elements["form-textarea"]
         createObjectTask(taskName.value)
         taskName.value = " "
-    })
+    }
 })
+
+
 
 // ===================== Botao de Cancelar/Fechar Formulario =====================
 
