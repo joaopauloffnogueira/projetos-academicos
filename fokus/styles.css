@@ -494,7 +494,7 @@ h6 {
 
 
 i {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     color: black;
     border-radius: 50%;
@@ -505,7 +505,6 @@ i {
 }
 .ri-edit-2-fill{
     font-size: 23px;
-    border: 1px solid black;
 }
 .icon-completed, .app__section-task-list-item-complete{
     background-color: #00F4BF;
