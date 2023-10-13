@@ -503,7 +503,8 @@ i {
 .ri-check-line{
     background-color: #fff;
 }
-.ri-pencil-fill{
+.ri-edit-2-fill{
+    font-size: 23px;
     border: 1px solid black;
 }
 .icon-completed, .app__section-task-list-item-complete{

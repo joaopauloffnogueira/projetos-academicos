@@ -14,21 +14,21 @@ const $tempoCronometro = document.querySelector("#timer");
 const $contextos = {
     "foco":{
         html: "foco",
-        banner: "/imagens/foco.png",
+        banner: "imagens/foco.png",
         title: `Otimize sua produtividade,<br>
         <strong class="app__title-strong">mergulhe no que importa.</strong>`,
         cronometro: 1500,
     },
     "short":{
         html: "descanso-curto",
-        banner: "/imagens/descanso-curto.png",
+        banner: "imagens/descanso-curto.png",
         title: `Que tal dar uma respirada?<br>
         <strong class="app__title-strong">Faça uma pausa curta!.</strong>`,
         cronometro: 900,
     },
     "long":{
         html: "descanso-longo",
-        banner: "/imagens/descanso-longo.png",
+        banner: "imagens/descanso-longo.png",
         title: `Hora de voltar à superfície,<br>
         <strong class="app__title-strong">Faça uma pausa longa.</strong>`,
         cronometro: 300,
@@ -37,10 +37,10 @@ const $contextos = {
 
 // Variaveis de Musica ==================================================
 
-const $musica = new Audio("/sons/luna-rise-part-one.mp3");
-const $audioPlay = new Audio("/sons/play.wav");
-const $audioPause = new Audio("/sons/pause.mp3");
-const $audioBeep = new Audio("/sons/beep.mp3");
+const $musica = new Audio("sons/luna-rise-part-one.mp3");
+const $audioPlay = new Audio("sons/play.wav");
+const $audioPause = new Audio("sons/pause.mp3");
+const $audioBeep = new Audio("sons/beep.mp3");
 
 // Variaveis do Cronometro ==================================================
 
@@ -90,11 +90,11 @@ $startPause.addEventListener("click", ()=>{
         clearInterval($tempoId);
         $tempoId = null;
         $audioPause.play();
-        alteraBotao("Retornar", "/imagens/play_arrow.png");
+        alteraBotao("Retornar", "imagens/play_arrow.png");
     } else {
         tempoDecorrido();
         $audioPlay.play();
-        alteraBotao("Pausar", "/imagens/pause.png");
+        alteraBotao("Pausar", "imagens/pause.png");
     }
 })
 function iniciaCronometro(){
@@ -103,7 +103,7 @@ function iniciaCronometro(){
         $tempoId = null;
         $audioBeep.play();
         $cronometro = $cronometroFixo
-        alteraBotao("Começar", "/imagens/play_arrow.png");
+        alteraBotao("Começar", "imagens/play_arrow.png");
         const focoActive = $html.getAttribute('data-contexto') === 'foco'
         if(focoActive){
             let event = new CustomEvent("taskFinish", {
