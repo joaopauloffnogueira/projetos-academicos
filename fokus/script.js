@@ -14,21 +14,21 @@ const $tempoCronometro = document.querySelector("#timer");
 const $contextos = {
     "foco":{
         html: "foco",
-        banner: "imagens/foco.png",
+        banner: "/imagens/foco.png",
         title: `Otimize sua produtividade,<br>
         <strong class="app__title-strong">mergulhe no que importa.</strong>`,
         cronometro: 1500,
     },
     "short":{
         html: "descanso-curto",
-        banner: "imagens/descanso-curto.png",
+        banner: "/imagens/descanso-curto.png",
         title: `Que tal dar uma respirada?<br>
         <strong class="app__title-strong">Faça uma pausa curta!.</strong>`,
         cronometro: 900,
     },
     "long":{
         html: "descanso-longo",
-        banner: "imagens/descanso-longo.png",
+        banner: "/imagens/descanso-longo.png",
         title: `Hora de voltar à superfície,<br>
         <strong class="app__title-strong">Faça uma pausa longa.</strong>`,
         cronometro: 300,
@@ -44,8 +44,8 @@ const $audioBeep = new Audio("/sons/beep.mp3");
 
 // Variaveis do Cronometro ==================================================
 
-let $cronometroFixo = 1500;
-let $cronometro = 1500;
+let $cronometroFixo = 5;
+let $cronometro = 5;
 let $tempoId = null;
 
 
@@ -103,9 +103,20 @@ function iniciaCronometro(){
         $tempoId = null;
         $audioBeep.play();
         $cronometro = $cronometroFixo
-        console.log($cronometro)
         alteraBotao("Começar", "/imagens/play_arrow.png");
-        mostrarTempo();
+        const focoActive = $html.getAttribute('data-contexto') === 'foco'
+        if(focoActive){
+            let event = new CustomEvent("taskFinish", {
+                detail: {
+                    message: "A Tarefa foi concluída com sucesso!",
+                    time: new Date(),
+                },
+                bubbles: true,
+                cancelable: true
+            });
+            document.dispatchEvent(event);
+            mostrarTempo();
+        }
     } else {
         $cronometro -= 1;
         mostrarTempo();
